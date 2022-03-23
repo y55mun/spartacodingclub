@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>1주차숙제 | 기획서 만들기</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <!-- 폰트   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+        .item-img {
+            text-align: center;
+        }
+        .price {
+            font-size: 20px;
+        }
+        .item-descript {
+            width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            padding-top: 10px;
+        }
+        .item-order {
+            width: 500px;
+        }
+        .btn {
+            margin: 10px auto;
+            width: 100px;
+            display: block;
+        }
+
+
+    </style>
+    <script>
+        function orderBtn() {
+            alert('주문이 완료되었습니다.');
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item-img">
+            <img class="item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDd4iSN9YrRIkPlpBh2H9mrfwMIiQIbA8Lg&usqp=CAU" alt="양초">
+        </div>
+        <div class="item-descript">
+<!--            <p class="item-title">양초를 팝니다</p>-->
+<!--            <p class="item-price">가격: 3,000원/개</p>-->
+            <h1>양초를 팝니다 <span class="price">가격: 3,000원/개</span></h1>
+            <p class="item-comment">이 양초는 사실 특별한 힘을 가지고 있어요. 양초를 켜고 소원을 빌면 짜자잔-! 뭐든지 이뤄지게 된답니다. 하나 사가세요! 대나무 향이 아주 좋아요!</p>
+
+        </div>
+    <div class="item-order">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">주문자 성함</div>
+            </div>
+            <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">수량</div>
+            </div>
+            <input type="number" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon" min="1" max="10" placeholder="--수량을 선택하세요--">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">주소</div>
+            </div>
+            <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">전화번호</div>
+            </div>
+            <input type="text" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
+        </div>
+
+        <a onclick="orderBtn()" class="btn btn-primary btn" href="#" role="button">주문하기</a>
+
+    </div>
+
+</body>
+
+</html>
